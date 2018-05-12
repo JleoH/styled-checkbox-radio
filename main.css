@@ -1,0 +1,107 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+.container {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+/* checkbox */
+.styledChk {
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.styledChk__checkbox {
+	display: inline-block;
+	border: 2px solid #000;
+	width: 10px;
+	height: 10px;
+}
+
+.styledChk__label {
+	display: inline-block;
+	color: #000;
+	font-size: 16px;
+	padding-left: 12px;
+	line-height: 16px;
+}
+.styledChk__inp[type=checkbox] {
+	display: none;
+}
+
+.styledChk__inp[type=checkbox]:checked~.styledChk__checkbox:after {
+	clear: both;
+	content: '';
+	display: block;
+	background-color: #000;
+	width: 6px;
+	height: 6px;
+	margin: 2px;
+}
+
+.styledChk__inp[type=checkbox]:disabled~.styledChk__checkbox {
+	border: 2px solid #999;
+}
+
+.styledChk__inp[type=checkbox]:checked:disabled~.styledChk__checkbox:after {
+	background-color: #999;
+}
+
+.styledChk__inp[type=checkbox]:disabled~.styledChk__label {
+	color: #999;
+}
+
+/* radio button */
+.styledRadio {
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.styledRadio__radio {
+	display: inline-block;
+	border: 2px solid #000;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+.styledRadio__label {
+	display: inline-block;
+	color: #000;
+	font-size: 16px;
+	padding-left: 12px;
+	line-height: 16px;
+}
+.styledRadio__inp[type=radio] {
+	display: none;
+}
+
+.styledRadio__inp[type=radio]:checked~.styledRadio__radio:after {
+	clear: both;
+	content: '';
+	display: block;
+	background-color: #000;
+	width: 6px;
+	height: 6px;
+	margin: 2px;
+	border-radius: 100%;
+}
+
+.styledRadio__inp[type=radio]:disabled~.styledRadio__radio {
+	border: 2px solid #999;
+}
+
+.styledRadio__inp[type=radio]:checked:disabled~.styledRadio__radio:after {
+	background-color: #999;
+}
+
+.styledRadio__inp[type=radio]:disabled~.styledRadio__label {
+	color: #999;
+}
